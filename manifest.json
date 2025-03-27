@@ -1,0 +1,17 @@
+{
+    "name": "Pogoda24/7",
+    "short_name": "P24/7",
+    "theme_color": "#ab21f3",
+    "background_color": "#ab21f3",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/PWA/",
+    "icons": [
+        {
+            "src": "./logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+  } 
