@@ -14,15 +14,15 @@
     <header>
         <h1>Aplikacja pogodowa</h1>
         <nav>
-            <button class="tab-button active" data-tab="pogoda">Pogoda</button>
-            <button class="tab-button" data-tab="walidator">Walidator</button>
+            <button class="tab-button active" data-tab="weather">Pogoda</button>
+            <button class="tab-button" data-tab="validator">Walidator</button>
             <button class="tab-button" data-tab="pwa-info">PWA Info</button>
         </nav>
     </header>
 
     <main>
         <!-- Sekcja Pogody -->
-        <section id="Pogoda" class="tab-content active">
+        <section id="weather" class="tab-content active">
             <div class="search">
                 <input type="text" placeholder="Podaj nazwę miasta">
                 <button>Sprawdź pogodę!</button>
@@ -55,7 +55,7 @@
         </section>
 
         <!-- Sekcja Walidatora -->
-        <section id="Walidator" class="tab-content">
+        <section id="validator" class="tab-content">
             <form id="register-form" class="validator-form">
                 <div class="form-group">
                     <label for="username">Nazwa użytkownika:</label>
@@ -90,7 +90,7 @@
         </section>
 
         <!-- Sekcja PWA -->
-        <section id="Pwa-info" class="tab-content">
+        <section id="pwa-info" class="tab-content">
             <h2>Informacje o PWA</h2>
             <div class="pwa-features">
                 <div class="pwa-feature">
@@ -128,6 +128,5 @@
     <script src="./validator.js"></script>
     <script src="./tabs.js"></script>
     <script src="./pwa-install.js"></script>
-    <script src="./navigation.js"></script>
 </body>
 </html>
