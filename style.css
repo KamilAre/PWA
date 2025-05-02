@@ -100,7 +100,19 @@ main {
         }
 
 /* Sekcja pogody */
-.weather_top, .weather_bottom {
+.weather_top {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    text-align: center;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather_bottom {
     margin-top: 20px;
     padding: 15px;
     background-color: #3a3a3a;
