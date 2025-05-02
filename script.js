@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
+    searchInput.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            searchButton.click();
+        }
+    });
+
     function updateWeatherData(data) {
         document.querySelector('.city_name').textContent = data.name;
         document.querySelector('.temp').textContent = `${Math.round(data.main.temp)}°C`;
@@ -36,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.wind_speed').textContent = `${data.wind.speed} m/s`;
         document.querySelector('.clouds').textContent = `${data.clouds.all}%`;
         document.querySelector('.visibility').textContent = `${data.visibility / 1000} km`;
-        document.querySelector('.weather_img').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        const weatherImg = document.querySelector('.weather_img');
+        weatherImg.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        weatherImg.style.display = "block";
+
     }
 });
